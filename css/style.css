@@ -6,7 +6,7 @@
   }
 
 body {
-    /* background-color: #fff; */
+    background-color: #fff; 
 }
 
   
@@ -34,6 +34,7 @@ body {
   #logo {
     width: 100px;
     height: auto;
+    padding-left: 10px;
 }
 
 
@@ -42,3 +43,36 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+
+  imgCar1, imgCar2, imgCar3, imgCar4 {
+      width: 300px;
+      height: 220px;
+  }
+
+/* Carrito de compras!! */
+
+.titulo1{
+    text-align: center;
+    font-size: 3rem;
+    color: blue;
+    text-decoration: underline;
+}
+​
+.titulo{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+​
+.boton{
+    display: flex;
+}
+.boton2{
+    display: flex;
+}
+/* .forma-de-pago{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-row: 1/3;
+} */
