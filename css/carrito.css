@@ -1,16 +1,5 @@
 /* Carrito de compras!! */
 
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-
-body {
-    background-color: #fff; 
-}
-
 .titulo1{
     text-align: center;
     font-size: 3rem;
@@ -24,15 +13,41 @@ body {
     text-decoration: underline;
 }
 ​
-.boton{
-    display: flex;
+.button-send{
+    max-width: 150px;
+    height: 30px;
+    border-radius:10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    box-sizing: border-box;
 }
-.boton2{
-    display: flex;
+    
+​
+.color-button{
+    background-color: skyblue;
 }
-/* .forma-de-pago{
+​
+.subtitulos{
+    font-size: 1.5rem;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+​
+.forLabel{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+​
+.myGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-row: 1/3;
-} */
+    justify-content: space-around;
+}
+​
+.pago{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+​
+}

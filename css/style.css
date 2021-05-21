@@ -21,7 +21,7 @@ nav {
             align-items: center;
     padding: 0.8rem;
     margin: 0.8rem;
-    background-color:  rgb(147, 144, 158);
+    background-color: rgb(177, 9, 127);
   }
   
   nav ul li {
@@ -49,6 +49,13 @@ nav {
   position: absolute;
 }
 
+input {
+  display: none;
+}
+
+/* .search {
+
+} */
 
 .banner {
     display: -webkit-box;
@@ -98,13 +105,11 @@ nav {
     color: #fff;
   }
 
-  .section3 {
-background-color: pink;
-  }
 
-  #imgCar1Related, #imgCar2Related, #imgCar3Related, #imgCar4Related {
+
+  img {
     width: 300px;
-      height: 170px;
+      height: auto;
       padding: 5px;
   }
 
