@@ -5,89 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>e-commerce</title>
+     <!-- aca linkeo a font-awesome -->
+     <script
+     src="https://kit.fontawesome.com/9c540da863.js"
+     crossorigin="anonymous"
+   ></script>
+   <!-- aca linkeo a css -->
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/hamburguer-menu.css">
   </head>
 
   <body>
     <head>
+        <!-- barra de arriba de pagina autos!!-->
+        <!-- registro e iniciar sesion -->
+            <!-- <ul class="pull-right ul-login">
+            <li><a href="https://autotest.com.ar/wp-login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> INICIAR SESIÓN</a></li><li><a href="https://autotest.com.ar/wp-login.php?action=register"><i class="fa fa-user" aria-hidden="true"></i> REGISTRO</a></li>
+            </ul>
+            <ul class="pull-right ul-login ul-login-mobile">
+            <li><a title="INICIAR SESIÓN" href="https://autotest.com.ar/wp-login.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li><li><a title="REGISTRO" href="https://autotest.com.ar/wp-login.php?action=register"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+            </ul>
+            </div> -->
+
+            <!-- nav principal -->
       <nav>
         <img
-          src="images/image.png"
+          src="https://png.pngtree.com/template/20190904/ourmid/pngtree-k-letter-and-kiosk-logo-design-image_300481.jpg"
           alt="logo"
           id="logo"
-          class="logoBorder"
+          class="logo"
         />
-        <ul>
-          <li><a href=""> Products</a></li>
-          <li><a href=""> About Us</a></li>
-          <li><a href=""> Contact</a></li>
-          <li><a href="html/carrito.html" target="_blank">Carrito</a></li>
-        </ul>
-      </nav>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler" />
 
-      <section class="section1">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+        <ul>
+          <li><a href=""> Productos</a></li>
+          <li><a href=""> Sobre Nosotros</a></li>
+          <li><a href=""> Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+        <ul id="shop">
+          <li><a href="html/carrito.html" target="_blank" class="shop-icon"></a><i class="fas fa-shopping-cart fa-3x" fas-fa></i></li>
+          <li><div id="circle" class="circle"></div></li>
+          <!-- posicion relative -->
+        </ul>
+        <!-- posicion absolute -->
+      </nav>
+      <section class="search">
+        <input type="search" placeholder="Buscar productos"><i class="fas fa-search"></i>
+      </section>
+
+<!-- Banner estatico o Carroussel -->
+      <section class="banner">
         <div>
-          <h1>Title</h1>
-          <p>Soy un texto y esta palabra sera puesta en.</p>
+          <h1>Tentate con nuestros productos</h1>
+          <img
+            src="./images/golosinas.jpeg"
+            alt="img"
+            class="img-banner"
+          />
         </div>
-        <img
-          src="https://via.placeholder.com/300x300"
-          alt="img"
-          id="img-change"
-        />
       </section>
     </head>
+          
 
     <main role="main">
-      <section class="section2">
-          <div id="001">
-        <div class="carroussel" id="carroussel">
-          <img src="https://renault.carone.com.ar/wp-content/uploads/sites/9/2018/02/AR_DUSTER_ROUGE.JPG.ximg_.l_8_m.smart_.jpg" alt="Duster" id="imgCar1" />
-          <button id="001">Añadir al carrito</button>
+      <section class="products" id="products">
+        <h2>Nuestros Productos</h2>
+          <div id="allProducts">
+        <div class="alfajor">
+          <button id="alfajor">Alfajores</button>
         </div>
-        <div id="002">
-          <img src="https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_2103cf5ea8894b65a193bfddd1bca03f.jpg" alt="Gol" id="imgCar2" />
-          <button id="002">Añadir al carrito</button>
+        <div class="chupetin">
+          <button id="chupetin">Chupetines</button>
         </div>
-        <div id="003">
-          <img src="https://acs2.blob.core.windows.net/imgcatalogo/l/VA_8b69cb60e0ba4d6590851189d83a4fd5.jpg" alt="Partner" id="imgCar3" />
-          <button id="003">Añadir al carrito</button>
+        <div class="chocolate">
+          <button id="chocolate">Chocolates</button>
         </div>
-        <div id="004"></div>
-          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mercedes-amg-c63-render-1614685864.png" alt="Mercedes Benz C63" id="imgCar4" />
-          <button id="004">Añadir al carrito</button>
+        <div class="chicle">
+          <button id="chicle">Chicles</button>
+        </div>
+        <div class="galletita">
+          <button id="galletita">Galletitas</button>
+        </div>
+        <div class="snack">
+          <button id="snack">Snacks</button>
+        </div>
         </div>
       </section>
-      <section class="section3">
-        <div class="related" id="related">
+      <section class="promotion">
+        <div class="promo" id="promo">
           <img
-            src="https://www.revistaturbo.com/sites/default/files/renault_duster_portada.jpg"
-            alt="Duster"
-            id="imgCar1Related"
+            src="https://www.zanettigolosinas.com.ar/wp-content/uploads/2021/04/77905741.jpg"
+            alt=""
+            id="1"
           />
-
-          <img
-            src="https://assets.volkswagen.com/is/image/volkswagenag/despedida-gol-volkswagen?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT00NTAmYWxpZ249LTAuODMsMC4wMCZiZmM9b2ZmJjIxZjI="
-            alt="Gol"
-            id="imgCar2Related"
-          />
-          <img
-            src="https://i2.wp.com/www.camionesybuses.com.ar/wp-content/uploads/2017/11/partner.jpg?resize=3244%2C1474"
-            alt="Partner"
-            id="imgCar3Related"
-          />
-          <img
-            src="https://img.motoryracing.com/noticias/portada/31000/31850-n.jpg"
-            alt="Mercedes Benz C63"
-            id="imgCar4Related"
-          />
+          <h2 class="titulo">Alfajor Jorgito Negro</h2>
+          <p>Precio: $100-</p>
+          <p>Disponibilidad: En stock</p>
+          <p>Disponibilidad: Sin stock</p>
+          ​
+                  <div>
+                      <label for="quantity">Cantidad:</label>
+                      <input type="text"  id="quantity" class="quantity"> 
+                      <input type="submit" value="Añadir al carrito" id="quantity-btn">
+                  </div>
+          
         </div>
       </section>
     </main>
+    
     <footer>
-
-    </footer>
+        <ul class="media-icons">
+         
+          <li>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"
+              ><i class="fab fa-instagram iconos fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/?lang=es" target="_blank"
+              ><i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://es-la.facebook.com/" target="_blank"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:name1@mail.com,name2@mail.com" target="_blank"
+              ><i class="fab fa-telegram fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="copyContainer">
+            <p class="copy">© 2021— Kios - Kito</p>
+          </div>
+          <div class="adressContainer">
+            <p class="adress">Av. Jorge Newbery 4020</p>
+          </div>
+      </footer>
 
     <script src="index.js"></script>
   </body>
 </html>
+
+
+
+
